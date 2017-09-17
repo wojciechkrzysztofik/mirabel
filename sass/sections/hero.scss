@@ -1,0 +1,40 @@
+.hero {
+    overflow: hidden;
+
+    .carousel {
+        width: 100%;
+
+        &__item {
+            overflow: hidden;
+
+            @media (min-width: 1024px) {
+                &:nth(1) img {
+                    animation-name: 'slider-animation-1';
+                }
+
+                &:nth(2) img {
+                    animation-name: 'slider-animation-2';
+                }
+
+                &:nth(3) img {
+                    animation-name: 'slider-animation-3';
+                }
+
+                &:nth(4) img {
+                    animation-name: 'slider-animation-4';
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            @media (min-width: 1024px) {
+                animation-name: 'slider-animation-1';
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-duration: 22s;
+            }
+            transform: scale(1.16);
+        }
+    }
+}

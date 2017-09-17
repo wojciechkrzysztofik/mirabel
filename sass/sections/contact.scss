@@ -1,0 +1,50 @@
+@import '../shared/variables';
+
+.contact {
+    padding: 65px 0 45px;
+    background-image: url('../images/contact/background.jpg');
+    background-size: cover;
+    color: #242422;
+    font-size: 2rem;
+
+    @media(max-width: 767px) {
+        padding: 120px 25px 45px;
+    }
+
+    a {
+        color: #242422;
+    }
+
+    .section__title {
+        color: #242422;
+    }
+
+    &__phone {
+        margin-top: 35px;
+        display: block;
+    }
+
+    &__email {
+        margin-right: 15px;
+    }
+
+    &__facebook {
+        margin-right: 15px;
+    }
+
+    &__right {
+        margin-top: 28px;
+        text-align: right;
+
+        @media(max-width: 767px) {
+            text-align: left;
+        }
+    }
+
+    &__map {
+      height: 400px;
+      margin-top: 40px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+}

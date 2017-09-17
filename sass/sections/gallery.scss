@@ -1,0 +1,39 @@
+@import '../shared/variables';
+
+.gallery {
+    overflow: hidden;
+
+    &__link {
+        outline: none;
+        float: left;
+        width: 33%;
+        width: calc(100% / 3);
+        display: block;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            .gallery__image {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        transition: all .2s ease-in-out;
+        opacity: .7;
+    }
+}

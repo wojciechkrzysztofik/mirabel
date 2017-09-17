@@ -1,0 +1,33 @@
+@import '../shared/variables';
+
+html,
+body {
+    background-color: $color-bg;
+    color: $color-font-secondary;
+    overflow-x: hidden;
+}
+body {
+    @media (max-width: 768px) {
+        padding-top: 115px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $color-font-primary;
+}
+
+.text {
+    line-height: 1.8;
+}
+
+* {
+    outline: none !important;
+}
+
+.container-dark {
+    background: #1a1a18;
+    margin: 40px 0 0;
+}

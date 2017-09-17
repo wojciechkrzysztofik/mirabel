@@ -1,0 +1,24 @@
+body {
+    font-family: 'museo-sans';
+}
+
+// vendors
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
+@import 'vendors/jquery.fancybox';
+
+// components
+@import 'components/section-title';
+
+// shared
+@import 'shared/variables';
+@import 'shared/global';
+@import 'shared/animations';
+
+// sections
+@import 'sections/navigation';
+@import 'sections/about';
+@import 'sections/gallery';
+@import 'sections/hero';
+@import 'sections/menu';
+@import 'sections/contact';

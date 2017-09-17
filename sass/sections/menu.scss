@@ -1,0 +1,27 @@
+@import '../shared/variables';
+
+.menu {
+    padding: 40px 0 10px;
+    text-align: center;
+
+    &__btn-download {
+        display: block;
+        transition: color .3s;
+        text-align: center;
+        display: inline-block;
+        color: $color-font-secondary;
+
+        &:focus,
+        &:hover {
+            color: $color-font-primary;
+            text-decoration: none;
+        }
+
+        img {
+            display: inline-block;
+            width: 72px;
+            height: 94px;
+            margin: 0 auto 20px;
+        }
+    }
+}

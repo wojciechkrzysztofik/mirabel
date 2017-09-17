@@ -1,0 +1,10 @@
+.section__title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+
+    &--centered {
+        text-align: center;
+    }
+}
